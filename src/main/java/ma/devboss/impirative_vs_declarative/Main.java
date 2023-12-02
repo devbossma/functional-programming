@@ -30,11 +30,6 @@ public class Main {
                 .filter(p -> Gender.FEMALE.equals(p.gender))
                 .toList()
                 .forEach(System.out::print);
-
-
-
-
-
     }
     static class Person{
         private final String name;
