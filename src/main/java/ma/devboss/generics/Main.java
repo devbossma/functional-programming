@@ -27,11 +27,11 @@ public class Main<T> {
         arrayDisplay(characters);
         arrayDisplay(strings);
         // ******* GENERIC METHOD WITH RETURN APPROACH *******
-        System.out.println("******* GENERIC METHOD WITH RETURN APPROACH *******");
-        System.out.println(getFirst(numbers));
-        System.out.println(getFirst(doubles));
-        System.out.println(getFirst(characters));
-        System.out.println(getFirst(strings));
+        //System.out.println("******* GENERIC METHOD WITH RETURN APPROACH *******");
+        //System.out.println(getFirst(numbers));
+        //System.out.println(getFirst(doubles));
+        //System.out.println(getFirst(characters));
+        //System.out.println(getFirst(strings));
 
         // ******* GENERIC CLASSES APPROACH ******
 
@@ -47,9 +47,9 @@ public class Main<T> {
                 new Generic<Character>('z'),
                 new Generic<String>("yassine")
         );
-        GEN_1.forEach(g->System.out.println(g.getX()));
+        //GEN_1.forEach(g->System.out.println(g.getX()));
         System.out.println("**********");
-        getAllX(GEN);
+        //getAllX(GEN);
 
 
     }
