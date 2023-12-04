@@ -17,6 +17,7 @@ public class WildCards {
 
     public static void main(String[] args) {
         DataProvider pd = new PeopleDataProvider();
+        // to be enhanced
         List<Person> list = (List<Person>) pd.provide();
         list.stream()
                 .filter(person -> Gender.FEMALE.equals(person.getGender()))
