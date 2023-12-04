@@ -5,14 +5,16 @@ import java.util.UUID;
 public class Person {
     private String name;
     private String id;
+    private Gender gender;
 
     public Person() {
         this.id = UUID.randomUUID().toString();
     }
 
-    public Person(String name) {
+    public Person(String name, Gender gender) {
         this();
         this.name = name;
+        this.gender = gender;
     }
 
     public String getName() {
@@ -31,11 +33,20 @@ public class Person {
         this.id = id;
     }
 
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
     @Override
     public String toString() {
-        return "Person{" +
+        return "{" +
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
+                ", gender='" + gender + '\'' +
                 '}'+'\n';
     }
 }

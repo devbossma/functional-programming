@@ -2,6 +2,8 @@ package ma.devboss.wildcards;
 
 
 import java.util.List;
+import static ma.devboss.wildcards.Gender.FEMALE;
+import static ma.devboss.wildcards.Gender.MALE;
 
 public class PeopleData implements Data {
 
@@ -10,13 +12,13 @@ public class PeopleData implements Data {
     public PeopleData() {
 
         peopleData = List.of(
-                new Person("Yassine"),
-                new Person("Mohamed"),
-                new Person("Ayman"),
-                new Person("Hoda"),
-                new Person("Nada"),
-                new Person("Salah"),
-                new Person("Layla")
+                new Person("Yassine", MALE),
+                new Person("Layla",FEMALE ),
+                new Person("Mohamed", MALE),
+                new Person("Ayman", MALE),
+                new Person("Hoda",FEMALE ),
+                new Person("Nada",FEMALE ),
+                new Person("Salah", MALE)
 
         );
     }

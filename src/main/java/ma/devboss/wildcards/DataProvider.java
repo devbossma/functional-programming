@@ -10,6 +10,7 @@ abstract class DataProvider {
 
 
     public List<?> provide(){
+
         return this.data.getData();
     };
 
