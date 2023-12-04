@@ -4,9 +4,6 @@ import java.util.List;
 
 public abstract class DataProvider {
     private  List<? extends Entity> dataList;
-
-    public DataProvider() {
-    }
+    public DataProvider() {}
     public abstract List<? extends  Entity> provide();
-
 }

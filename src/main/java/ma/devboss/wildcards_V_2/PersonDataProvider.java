@@ -7,9 +7,7 @@ public class PersonDataProvider extends DataProvider {
     public PersonDataProvider() {}
 
     @Override
-    public List<Person> provide() {
-        return (List<Person>) this.data.getData();
+    public List<? extends Entity> provide() {
+        return this.data.getData();
     }
-
-
 }
