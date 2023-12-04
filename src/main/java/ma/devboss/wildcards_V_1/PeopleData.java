@@ -1,9 +1,9 @@
-package ma.devboss.wildcards;
+package ma.devboss.wildcards_V_1;
 
 
 import java.util.List;
-import static ma.devboss.wildcards.Gender.FEMALE;
-import static ma.devboss.wildcards.Gender.MALE;
+import static ma.devboss.wildcards_V_1.Gender.FEMALE;
+import static ma.devboss.wildcards_V_1.Gender.MALE;
 
 public class PeopleData implements Data {
 
