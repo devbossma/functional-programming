@@ -9,5 +9,4 @@ public class Main {
         List<Person> people  = (List<Person>) dataProvider.provide();
         people.forEach(System.out::print);
     }
-
 }
