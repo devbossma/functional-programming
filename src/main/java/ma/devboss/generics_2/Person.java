@@ -1,7 +1,5 @@
-package ma.devboss.wildcards_V_2;
+package ma.devboss.generics_2;
 
-
-import ma.devboss.wildcards_V_2.Gender;
 
 import java.util.UUID;
 public class Person implements Entity{

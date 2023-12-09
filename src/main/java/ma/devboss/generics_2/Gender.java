@@ -1,4 +1,4 @@
-package ma.devboss.wildcards_V_2;
+package ma.devboss.generics_2;
 
 public enum Gender {
     MALE, FEMALE;

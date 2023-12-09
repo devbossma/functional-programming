@@ -1,12 +1,12 @@
-package ma.devboss.wildcards_V_2;
+package ma.devboss.generics_2;
 
 import java.util.List;
 
-import static ma.devboss.wildcards_V_2.Gender.FEMALE;
-import static ma.devboss.wildcards_V_2.Gender.MALE;
+import static ma.devboss.generics_2.Gender.FEMALE;
+import static ma.devboss.generics_2.Gender.MALE;
 
 
-public final class PersonData implements Data {
+public final class PersonData implements Data<Person> {
     private final List<Person> peopleData;
     public PersonData() {
         peopleData = List.of(
