@@ -7,6 +7,12 @@ public class Client {
                 .provideData()
                 .forEach(p->System.out.println(p.getName()));
 
-    }
+        getProductInfo(new ProductDataProvider());
 
+    }
+    public static void getProductInfo(DataProvider<Product> dataProvider){
+        System.out.println("#################");
+        dataProvider.provideData()
+                .forEach(p->System.out.println(p.getName()));
+    }
 }

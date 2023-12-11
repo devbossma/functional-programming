@@ -7,7 +7,7 @@ public class ProductDataStore implements Data<Product>{
     public ProductDataStore() {
         productList = List.of(
                 new Product("phone"),
-                new Product("phone"),
+                new Product("Ipad"),
                 new Product("PC"),
                 new Product("Key Board"),
                 new Product("Mouse")
