@@ -11,7 +11,7 @@ public class _Consumer {
     // Unlike most other functional interfaces, Consumer is expected to operate via side effects.
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
-        //greeting.accept("Yassine");
+        greeting.accept("Yassine");
         nameToUpperCase.accept("yassine");
         addUpperCaseNamesToTheList.accept("yassin", names);
         addUpperCaseNamesToTheList.accept("hassan", names);
