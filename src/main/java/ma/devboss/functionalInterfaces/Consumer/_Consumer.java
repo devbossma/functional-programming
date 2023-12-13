@@ -12,7 +12,7 @@ public class _Consumer {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
         //greeting.accept("Yassine");
-        //nameToUpperCase.accept("yassine");
+        nameToUpperCase.accept("yassine");
         addUpperCaseNamesToTheList.accept("yassin", names);
         addUpperCaseNamesToTheList.accept("hassan", names);
         addUpperCaseNamesToTheList.accept("abdu lah", names);
