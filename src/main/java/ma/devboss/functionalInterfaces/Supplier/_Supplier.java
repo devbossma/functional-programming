@@ -9,7 +9,6 @@ public class _Supplier {
     }
     static Supplier<String> dbHost = () -> "localhost";
     static Supplier<String> dbPort = () -> "4036";
-    static Supplier<String> getDbUrl = () -> dbHost.get().concat(":".concat(dbPort.get()));
-
+    static Supplier<String> getDbUrl = () -> "jdbc://".concat(dbHost.get().concat(":".concat(dbPort.get())));
 
 }
