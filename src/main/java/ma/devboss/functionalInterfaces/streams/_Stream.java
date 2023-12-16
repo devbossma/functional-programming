@@ -1,7 +1,6 @@
 package ma.devboss.functionalInterfaces.streams;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -22,6 +21,8 @@ public class _Stream {
                 new Product("GoPro", "Camera", 600.97, true),
                 new Product("Canon", "Camera", 9700.97, false)
                 );
+
+
         // Filter takes a predicate
         List<Product> computersInStock = productList.stream()
                 .filter(p -> "Computers".equals(p.getCategory()))
@@ -52,9 +53,6 @@ public class _Stream {
         productList.stream()
                 .takeWhile(product -> product.getPrice() >= 2_800.97)
                 .forEach(System.out::println);
-
-
-
 
 
     }
