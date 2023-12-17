@@ -58,9 +58,9 @@ public class _Stream {
         });
 
         System.out.println("------------------------------");
-//        productList.stream()
-//                .takeWhile(product -> product.getPrice() >= 2_800.97)
-//                .forEach(System.out::println);
+        productList.stream()
+                .takeWhile(product -> product.getPrice() >= 2_800.97)
+                .forEach(System.out::println);
 
 
     }
