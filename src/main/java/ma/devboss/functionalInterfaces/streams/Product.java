@@ -1,8 +1,8 @@
 package ma.devboss.functionalInterfaces.streams;
 
-import org.jetbrains.annotations.NotNull;
 
-public class Product implements  Comparable{
+
+public class Product {
     private String name;
     private String category;
     private Double price;
@@ -58,9 +58,9 @@ public class Product implements  Comparable{
                 "}\n"
 ;
     }
-
+/*
     @Override
     public int compareTo(@NotNull Object o) {
         return this.getPrice().intValue();
-    }
+    }*/
 }

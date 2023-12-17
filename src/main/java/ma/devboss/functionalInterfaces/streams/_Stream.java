@@ -1,6 +1,8 @@
 package ma.devboss.functionalInterfaces.streams;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -28,31 +30,37 @@ public class _Stream {
                 .filter(p -> "Computers".equals(p.getCategory()))
                 .filter(Product::getInStock)
                 .toList();
-        System.out.println(computersInStock);
+//        System.out.println(computersInStock);
 
         // Map takes a Function
         Set<String> categories = productList.stream()
                 .map(Product::getCategory)
                 .collect(Collectors.toSet());
-        System.out.println(categories);
+//        System.out.println(categories);
 
         // limit returns a fixed given size for the new stream produced
         List<Product> products = productList.stream().limit(7).toList();
-        System.out.println(products.size());
+//        System.out.println(products.size());
 
-        // sorted() First thing the the streamed list should contain a comparable Type
-        Stream<Product> sorted = productList.stream()
-                .filter(p -> "Computers".equals(p.getCategory()))
-                .sorted();
-        List<Product> products1 = sorted
+        // sorted()
+        List<Product> sorted = productList.stream()
+                .sorted(Comparator.comparing(Product::getPrice).reversed())
+                .limit(3)
                 .toList();
-        System.out.println(products1);
+        //sorted.forEach(System.out::println);
+
+      //  group
+        Map<String, List<Product>> listMap =
+                productList.stream().collect(Collectors.groupingBy(Product::getCategory));
+        listMap.forEach((c,p)->{
+            System.out.println(c);
+            p.forEach(System.out::println);
+        });
 
         System.out.println("------------------------------");
-
-        productList.stream()
-                .takeWhile(product -> product.getPrice() >= 2_800.97)
-                .forEach(System.out::println);
+//        productList.stream()
+//                .takeWhile(product -> product.getPrice() >= 2_800.97)
+//                .forEach(System.out::println);
 
 
     }
