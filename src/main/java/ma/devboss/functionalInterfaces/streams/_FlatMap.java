@@ -19,5 +19,6 @@ public class _FlatMap {
                 .collect(Collectors.toSet());
         System.out.println(Categories);
 
+
     }
 }
