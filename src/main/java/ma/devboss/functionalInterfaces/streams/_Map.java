@@ -12,7 +12,7 @@ public class _Map {
         Set<String> categories = productList.stream()
                 .map(Product::getCategory)
                 .collect(Collectors.toSet());
-//      System.out.println(categories);
+      System.out.println(categories);
 
 
 
@@ -23,6 +23,6 @@ public class _Map {
                         product.getCategory(), product.getPrice() - 100d,
                         product.getInStock()))
                 .toList();
-//        System.out.println(promotions);
+        System.out.println(promotions);
     }
 }
