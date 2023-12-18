@@ -10,6 +10,7 @@ public class _Filter {
         // with stream methode we go up to the abstraction mode
         ProductDataProvider.productList.stream()
                 .filter(inStock)
+                .filter(p -> "Computers".equals(p.getCategory()))
                 .filter(p->p.getPrice() > 5000) // we can apply more filters on other filter as well
                 .forEach(System.out::println);
 
