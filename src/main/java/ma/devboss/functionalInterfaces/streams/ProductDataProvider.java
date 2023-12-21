@@ -5,7 +5,7 @@ import java.util.List;
 public class ProductDataProvider {
     public  static final List<Product> productList = List.of(
             new Product("HP EliteBook 840 G5", "Computers", 4800.97, true),
-            new Product("HP Laser E65", "Printer", 2800.97, true),
+        new Product("HP Laser E65", "Printer", 2800.97, true),
             new Product("HP Laser E65 Color", "Printer", 2800.97, true),
             new Product("HP Laser E65 Graver", "Printer", 2800.97, false),
             new Product("HP EliteBook 860 G8", "Computers", 5000.85, false),
