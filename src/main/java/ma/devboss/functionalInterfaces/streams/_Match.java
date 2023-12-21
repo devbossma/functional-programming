@@ -9,7 +9,7 @@ public class _Match {
         System.out.println(anyMatch); // true if at last one match
         System.out.println(allMatch); // true if all match
         System.out.println(noneMatch); // true if no one match
-        Product p = ProductDataProvider.getProductById(18);
+        Product p = ProductDataProvider.findProductById(10);
         System.out.println(p);
 
     }

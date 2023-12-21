@@ -39,10 +39,9 @@ public class ProductDataProvider {
     public  static final List<Product> mobiles = productList.stream().filter(p -> "Mobile".equals(p.getCategory())).toList();
     public  static final List<Product> cameras = productList.stream().filter(p -> "Camera".equals(p.getCategory())).toList();
     public  static final List<List<Product>> allProducts = List.of(computers, printers, cameras, mobiles);
-    public static Product getProductById(int id){
+    public static Product findProductById(int id){
         return productList.stream().filter(p -> p.getId() == id).map(product ->{
                     Product p = new Product(
-
                             product.getName(),
                             product.getCategory(),
                             product.getPrice(),
