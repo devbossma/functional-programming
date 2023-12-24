@@ -1,6 +1,8 @@
 package ma.devboss.functionalInterfaces.streams;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 public class _Find {
     public static void main(String[] args) {
